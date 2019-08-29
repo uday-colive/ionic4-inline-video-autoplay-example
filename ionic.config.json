@@ -1,5 +1,7 @@
 {
   "name": "video-test",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
