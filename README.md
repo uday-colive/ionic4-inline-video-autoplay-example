@@ -1,7 +1,16 @@
 # ionic4-inline-video-autoplay-example
-Just an example of how to implement autoplay videos from youtube and vimeo that plays inline inside the webview.
+Just an working example of how to implement autoplay videos from youtube and vimeo that plays inline inside the webview.
+If you don't want to check the code, you can follow the steps bellow.
 
 ### Youtube Player API
+
+Import the script in `index.html` file.
+```html
+<script src="https://www.youtube.com/iframe_api"></script>
+```
+
+Add the following code to a `ngOnInit` hook for an example, you may need to declare the variable `YT` in a global scope
+
 ```typescript
 let player;
 (player = new YT.Player('player', {
@@ -20,7 +29,7 @@ let player;
 }));
 ```
 
-This code will play the video when it is loaded. We also need to have an div#player in our HTML file.
+This code will play the video when it is loaded, but we also need to have an div#player in our HTML file.
 
 ```html
 <div id="player"></div>
